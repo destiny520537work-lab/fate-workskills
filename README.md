@@ -2,7 +2,7 @@
 
 # fate-workskills
 
-<p><em>「把真正好用的工作方法，装进你的 AI」</em></p>
+<p><em>「把真正能帮你“偷懒”的工作方法，装进你的 AI」</em></p>
 
 ![Skills](https://img.shields.io/badge/Skills-8-4c9aff)
 ![Audience](https://img.shields.io/badge/面向人群-零基础用户-f97316)
