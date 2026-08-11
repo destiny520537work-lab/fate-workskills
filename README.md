@@ -25,7 +25,8 @@
 
 ---
 
-![fate-workskills cover](assets/fate-workskills-github-cover.png)
+![Uploading image.png…]()
+
 
 ---
 
