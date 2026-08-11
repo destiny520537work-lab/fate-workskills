@@ -1,0 +1,4 @@
+interface:
+  display_name: "最精髓提炼器"
+  short_description: "从复杂系统中提炼核心闭环、关键机制、真实价值与一句话精髓"
+  default_prompt: "使用 $essence-extractor 提炼这个项目真正的精髓，并讲清楚核心闭环。"

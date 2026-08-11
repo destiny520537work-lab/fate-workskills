@@ -1,0 +1,6 @@
+interface:
+  display_name: "Meeting Review"
+  short_description: "基于会议原话复盘表达、推进效果，并设计下次可执行改进动作"
+  default_prompt: "Use $meeting-review to review the user's meeting performance with evidence and next-step practice."
+policy:
+  allow_implicit_invocation: true

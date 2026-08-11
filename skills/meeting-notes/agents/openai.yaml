@@ -1,0 +1,6 @@
+interface:
+  display_name: "Meeting Notes"
+  short_description: "把原始会议转写整理成完整记录、三分钟总结和可核对行动项"
+  default_prompt: "Use $meeting-notes to organize this transcript into a full version and a three-minute summary."
+policy:
+  allow_implicit_invocation: true

@@ -1,4 +1,6 @@
 interface:
   display_name: "Learning Notes"
   short_description: "Turn a finished learning session into a reviewable Markdown note"
-  default_prompt: "复盘刚刚的学习，写成可回看的学习笔记。"
+  default_prompt: "使用 $learning-notes 复盘刚刚结束的学习，写成可回看的学习笔记。"
+policy:
+  allow_implicit_invocation: false
