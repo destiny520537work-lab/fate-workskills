@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning Notes"
+  short_description: "Turn a finished learning session into a reviewable Markdown note"
+  default_prompt: "复盘刚刚的学习，写成可回看的学习笔记。"

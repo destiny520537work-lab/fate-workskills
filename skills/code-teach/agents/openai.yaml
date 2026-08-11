@@ -1,0 +1,6 @@
+interface:
+  display_name: "Command-line Coaching"
+  short_description: "Guide users through terminal tasks one explained command at a time"
+  default_prompt: "Use $code-teach to guide me through this task while I run each command myself."
+policy:
+  allow_implicit_invocation: true

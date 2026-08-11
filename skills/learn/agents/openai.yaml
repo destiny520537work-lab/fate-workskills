@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hands-on Learning"
+  short_description: "动手参与式学习陪跑"
+  default_prompt: "Use $learn to teach the user step by step with hands-on checkpoints."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Daily Progress Review"
+  short_description: "每日进展回收与防忘接续"
+  default_prompt: "Use $daily to reconstruct the user's progress for a specific day from local evidence."
+policy:
+  allow_implicit_invocation: true
