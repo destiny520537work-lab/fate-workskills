@@ -25,6 +25,10 @@
 
 ---
 
+![fate-workskills cover](assets/fate-workskills-github-cover.png)
+
+---
+
 ## 🚀 零基础 30 秒用法
 
 **不会命令行？没装过任何工具？没关系。** 最简单的方式就是：选择一个 Skill → 复制 → 粘贴给 AI。
