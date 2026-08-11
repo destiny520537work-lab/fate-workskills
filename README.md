@@ -1,16 +1,35 @@
+<div align="center">
+
 # fate-workskills
 
-> 「不是让 AI 替你忙，而是让它按一套靠谱的方法陪你工作。」
+<p><em>「把真正好用的工作方法，装进你的 AI」</em></p>
 
-一组可以直接交给 Claude、Codex 等 AI agent（能够按步骤执行任务的 AI 助手）的工作方法：帮你学习、复盘、整理会议、找回做到一半的任务，以及在重要结论发布前挑出漏洞。
+![Skills](https://img.shields.io/badge/Skills-8-4c9aff)
+![Audience](https://img.shields.io/badge/面向人群-零基础用户-f97316)
+![Usage](https://img.shields.io/badge/使用方式-复制即用-22a06b)
+![Language](https://img.shields.io/badge/语言-中文-8b5cf6)
 
-[🚀 零基础 30 秒用法](#-零基础-30-秒用法) · [🧰 八个工具](#-八个工具分别做什么) · [🧩 常见组合](#-怎么组合使用) · [📦 安装](#-安装到-ai-agent) · [🔒 隐私说明](#-隐私与使用边界)
+**一套可以直接交给 Claude、Codex 等 AI 助手的工作方法。**<br>
+帮你学习、动手完成任务、整理会议、深度分析，以及在重要结论发布前主动找漏洞。
+
+| 你要解决的问题 | 推荐组合 | 最终得到什么 |
+| :--- | :---: | :--- |
+| 学新东西 | `learn` + `learning-notes` | 从亲手学会，到留下能复习的笔记 |
+| 跟着 AI 办事 | `code-teach` + `daily` | 一步步做完，第二天还能接着干 |
+| 看懂复杂材料 | `essence-extractor` + `adversarial-review` | 抓住核心，再检查结论靠不靠谱 |
+| 开会与沟通 | `meeting-notes` + `meeting-review` | 整理会议，同时提升自己的表达 |
+
+[🚀 零基础用法](#-零基础-30-秒用法) · [🧰 八个 Skills](#-八个工具分别做什么) · [🧩 推荐组合](#-怎么组合使用) · [📦 安装](#-安装到-ai-agent) · [🔒 隐私说明](#-隐私与使用边界)
+
+</div>
 
 ---
 
 ## 🚀 零基础 30 秒用法
 
-不会写代码、没用过 GitHub，也可以直接使用。
+**不会命令行？没装过任何工具？没关系。** 最简单的方式就是：选择一个 Skill → 复制 → 粘贴给 AI。
+
+> Skill 可以理解成一份“给 AI 看的工作说明书”。你不需要读懂里面的技术内容，只需要复制给 AI。
 
 ### 第一步：选择你现在要解决的问题
 
@@ -25,11 +44,13 @@
 | 把混乱的会议转写整理成纪要和待办 | [`meeting-notes`](skills/meeting-notes/SKILL.md) |
 | 复盘自己在会议里哪里说得好、哪里要改 | [`meeting-review`](skills/meeting-review/SKILL.md) |
 
+👉 **点击上表中的蓝色 Skill 名称，就能打开对应的完整内容。**
+
 ### 第二步：复制内容
 
 打开对应的 `SKILL.md` 后，先点击文件页面上的 **Raw（原始文件）**，再复制全文。
 
-手机用户可以长按页面后选择文本；电脑用户可以用 `Ctrl+A / Ctrl+C`，Mac 使用 `Command+A / Command+C`。
+> **手机用户：** 长按页面 → 全选 → 复制　　**电脑用户：** `Ctrl+A` → `Ctrl+C`　　**Mac 用户：** `Command+A` → `Command+C`
 
 ### 第三步：粘贴给 AI
 
