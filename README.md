@@ -6,7 +6,7 @@
 
 ![Skills](https://img.shields.io/badge/Skills-8-4c9aff)
 ![Audience](https://img.shields.io/badge/面向人群-零基础用户-f97316)
-![Usage](https://img.shields.io/badge/使用方式-复制即用-22a06b)
+![Usage](https://img.shields.io/badge/使用方式-打包下载-22a06b)
 ![Language](https://img.shields.io/badge/语言-中文-8b5cf6)
 
 **一套可以直接交给 Claude、Codex 等 AI 助手的工作方法。**<br>
@@ -21,6 +21,8 @@
 
 [🚀 零基础用法](#-零基础-30-秒用法) · [🧰 八个 Skills](#-八个工具分别做什么) · [🧩 推荐组合](#-怎么组合使用) · [📦 安装](#-安装到-ai-agent) · [🔒 隐私说明](#-隐私与使用边界)
 
+<a href="https://github.com/destiny520537work-lab/fate-workskills/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/⬇_下载完整工具包-ZIP-0969da?style=for-the-badge" alt="下载完整工具包 ZIP"></a>
+
 </div>
 
 ---
@@ -32,11 +34,19 @@
 
 ## 🚀 零基础 30 秒用法
 
-**不会命令行？没装过任何工具？没关系。** 最简单的方式就是：选择一个 Skill → 复制 → 粘贴给 AI。
+**不会命令行？没装过任何工具？没关系。** 直接下载完整工具包，再把需要的 `SKILL.md` 发给 AI。
 
-> Skill 可以理解成一份“给 AI 看的工作说明书”。你不需要读懂里面的技术内容，只需要复制给 AI。
+> Skill 可以理解成一份“给 AI 看的工作说明书”。你不需要读懂里面的技术内容，只需要把文件交给 AI。
 
-### 第一步：选择你现在要解决的问题
+### 第一步：下载并解压
+
+👉 **[点击这里下载 fate-workskills 完整 ZIP 工具包](https://github.com/destiny520537work-lab/fate-workskills/archive/refs/heads/main.zip)**
+
+下载完成后双击解压，打开 `fate-workskills-main/skills/`，里面就是八个工具文件夹。
+
+> 当前仓库是 Private，暂时只有获得仓库权限的 GitHub 账号能下载；将来改为 Public 后，粉丝无需登录即可使用这个按钮。
+
+### 第二步：选择你现在要解决的问题
 
 | 我现在想…… | 点这里打开 |
 | --- | --- |
@@ -49,17 +59,11 @@
 | 把混乱的会议转写整理成纪要和待办 | [`meeting-notes`](skills/meeting-notes/SKILL.md) |
 | 复盘自己在会议里哪里说得好、哪里要改 | [`meeting-review`](skills/meeting-review/SKILL.md) |
 
-👉 **点击上表中的蓝色 Skill 名称，就能打开对应的完整内容。**
+每个文件夹里都有一个 `SKILL.md`，这就是要交给 AI 的文件。上表中的蓝色名称也可以直接在线查看。
 
-### 第二步：复制内容
+### 第三步：把文件发给 AI
 
-打开对应的 `SKILL.md` 后，先点击文件页面上的 **Raw（原始文件）**，再复制全文。
-
-> **手机用户：** 长按页面 → 全选 → 复制　　**电脑用户：** `Ctrl+A` → `Ctrl+C`　　**Mac 用户：** `Command+A` → `Command+C`
-
-### 第三步：粘贴给 AI
-
-新建一个 Claude、Codex 或其他 AI 对话，把刚才复制的内容粘贴进去，然后直接说你的需求。例如：
+打开 Claude、Codex 或其他支持附件的 AI 对话，把选好的 `SKILL.md` 拖进对话框，然后直接说你的需求。例如：
 
 ```text
 按这套方法教我理解 Git 分支。我是第一次学，一次只讲一步。
@@ -69,7 +73,7 @@
 按这套方法整理下面的会议转写，任何不确定的人名和数字都标成存疑。
 ```
 
-就这样。除 `daily` 外，其他 skill 临时使用都不需要安装软件；`daily` 需要读取你自己电脑上的本地对话记录，因此必须安装后使用。
+就这样。没有附件上传功能时，再打开对应的 `SKILL.md`，点击 **Raw（原始文件）** 后复制全文粘贴。除 `daily` 外，其他 skill 临时使用都不需要安装；`daily` 需要读取本机对话记录，因此必须按后面的安装方法使用。
 
 ### 💡 不想每次重新粘贴？
 
@@ -113,11 +117,12 @@ AI 每次只讲一个小概念，随后停下来让你亲手操作或回答检�
 
 ### 5. adversarial-review：重要结论发布前，先自己挑刺
 
-它不负责夸，而是检查循环论证、提示泄题、样本量不足、混杂变量、代码与宣称不一致，以及数字是否能从原始记录重新算出来。
+它保留两条最有记忆点的核心：**铁律“独立视角”**，以及逐条必过的**“九宗罪”清单**。它不负责夸，而是检查循环论证、提示泄题、样本量不足、混杂变量、代码与宣称不一致，以及数字是否能从原始记录重新算出来。
 
 **适合：** 论文、实验报告、技术博客、产品能力说明和对外汇报。
 
 [→ 查看 adversarial-review 完整规则](skills/adversarial-review/SKILL.md)
+· [→ 查看虚构脱敏审稿范例](skills/adversarial-review/references/anonymized-review-example.md)
 
 ### 6. essence-extractor：不再被模块名和术语淹没
 
@@ -126,6 +131,7 @@ AI 每次只讲一个小概念，随后停下来让你亲手操作或回答检�
 **适合：** 看懂复杂仓库、论文、产品、商业模式和系统架构。
 
 [→ 查看 essence-extractor 完整规则](skills/essence-extractor/SKILL.md)
+· [→ 查看虚构脱敏提炼范例](skills/essence-extractor/references/anonymized-essence-example.md)
 
 ### 7. meeting-notes：把会议转写变成可复核的两份文档
 
@@ -225,10 +231,10 @@ npx skills add destiny520537work-lab/fate-workskills
 fate-workskills/
 ├── README.md
 └── skills/
-    ├── adversarial-review/   # 对抗审稿
+    ├── adversarial-review/   # 对抗审稿 + 虚构脱敏范例
     ├── code-teach/           # 命令行陪跑
     ├── daily/                # 每日进展恢复
-    ├── essence-extractor/    # 核心机制提炼
+    ├── essence-extractor/    # 核心机制提炼 + 虚构脱敏范例
     ├── learn/                # 动手学习
     ├── learning-notes/       # 学习复盘笔记
     ├── meeting-notes/        # 会议纪要整理
