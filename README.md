@@ -4,7 +4,7 @@
 
 <p><em>「把真正能帮你“偷懒”的工作方法，装进你的 AI」</em></p>
 
-![Skills](https://img.shields.io/badge/Skills-8-4c9aff)
+![Skills](https://img.shields.io/badge/Skills-9-4c9aff)
 ![Audience](https://img.shields.io/badge/面向人群-零基础用户-f97316)
 ![Usage](https://img.shields.io/badge/使用方式-打包下载-22a06b)
 ![Language](https://img.shields.io/badge/语言-中文-8b5cf6)
@@ -17,9 +17,10 @@
 | 学新东西 | `learn` + `learning-notes` | 从亲手学会，到留下能复习的笔记 |
 | 跟着 AI 办事 | `code-teach` + `daily` | 一步步做完，第二天还能接着干 |
 | 看懂复杂材料 | `essence-extractor` + `adversarial-review` | 抓住核心，再检查结论靠不靠谱 |
+| 调研产品、公司或技术方向 | `research` | 一份有一手来源、结论先行的中文调研报告 |
 | 开会与沟通 | `meeting-notes` + `meeting-review` | 整理会议，同时提升自己的表达 |
 
-[🚀 零基础用法](#-零基础-30-秒用法) · [🧰 八个 Skills](#-八个工具分别做什么) · [🧩 推荐组合](#-怎么组合使用) · [📦 安装](#-安装到-ai-agent) · [🔒 隐私说明](#-隐私与使用边界)
+[🚀 零基础用法](#-零基础-30-秒用法) · [🧰 九个 Skills](#-九个工具分别做什么) · [🧩 推荐组合](#-怎么组合使用) · [📦 安装](#-安装到-ai-agent) · [🔒 隐私说明](#-隐私与使用边界)
 
 <a href="https://github.com/destiny520537work-lab/fate-workskills/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/⬇_下载完整工具包-ZIP-0969da?style=for-the-badge" alt="下载完整工具包 ZIP"></a>
 
@@ -41,7 +42,7 @@
 
 👉 **[点击这里下载 fate-workskills 完整 ZIP 工具包](https://github.com/destiny520537work-lab/fate-workskills/archive/refs/heads/main.zip)**
 
-下载完成后双击解压，打开 `fate-workskills-main/skills/`，里面就是八个工具文件夹。
+下载完成后双击解压，打开 `fate-workskills-main/skills/`，里面就是九个工具文件夹。
 
 > 当前仓库是 Private，暂时只有获得仓库权限的 GitHub 账号能下载；将来改为 Public 后，粉丝无需登录即可使用这个按钮。
 
@@ -55,6 +56,7 @@
 | 找回昨天做到一半的任务（需要本地安装） | [`daily`](skills/daily/SKILL.md) |
 | 检查论文、实验或技术结论有没有硬伤 | [`adversarial-review`](skills/adversarial-review/SKILL.md) |
 | 看懂一个复杂项目真正值钱的地方 | [`essence-extractor`](skills/essence-extractor/SKILL.md) |
+| 调研产品、公司、赛道或技术方向 | [`research`](skills/research/SKILL.md) |
 | 把混乱的会议转写整理成纪要和待办 | [`meeting-notes`](skills/meeting-notes/SKILL.md) |
 | 复盘自己在会议里哪里说得好、哪里要改 | [`meeting-review`](skills/meeting-review/SKILL.md) |
 
@@ -80,7 +82,7 @@
 
 ---
 
-## 🧰 八个工具分别做什么
+## 🧰 九个工具分别做什么
 
 ### 1. learn：真的学会
 
@@ -148,6 +150,14 @@ AI 每次只讲一个小概念，随后停下来让你亲手操作或回答检�
 
 [→ 查看 meeting-review 完整规则](skills/meeting-review/SKILL.md)
 
+### 9. research：先查一手来源，再形成能落地的判断
+
+它默认把问题拆成 2-4 路并行调研，优先核查官方文档、产品页、GitHub、财报和官方博客，再把事实、推断与结论分开写清楚。只有明确要求“轻度调研”时，才缩短流程。
+
+**适合：** 调研公司、产品、竞品、赛道、商业模式和技术方向。
+
+[→ 查看 research 完整规则](skills/research/SKILL.md)
+
 ---
 
 ## 🧩 怎么组合使用
@@ -165,6 +175,8 @@ flowchart LR
 
     J["会议结束"] --> K["meeting-notes：整理内容"]
     K --> L["meeting-review：复盘表达"]
+
+    M["需要做调研"] --> N["research：查来源并形成判断"]
 ```
 
 最常用的四组搭配：
@@ -173,6 +185,7 @@ flowchart LR
 - **动手办事：** `code-teach` → `daily`
 - **深度分析：** `essence-extractor` → `adversarial-review`
 - **会议提升：** `meeting-notes` → `meeting-review`
+- **深度调研：** `research`
 
 这些工具不会强制捆绑。只装一个、只复制一个，也可以独立使用。
 
@@ -237,7 +250,8 @@ fate-workskills/
     ├── learn/                # 动手学习
     ├── learning-notes/       # 学习复盘笔记
     ├── meeting-notes/        # 会议纪要整理
-    └── meeting-review/       # 会议表达复盘
+    ├── meeting-review/       # 会议表达复盘
+    └── research/             # 一手来源深度调研
 ```
 
 每个目录的核心文件都是 `SKILL.md`。`agents/openai.yaml` 提供 Codex 的显示信息；[`daily` 脚本](skills/daily/scripts/extract-day.sh)用于读取本机 Claude Code 的 JSONL 对话记录，内容不会由脚本主动上传。
@@ -255,7 +269,7 @@ fate-workskills/
 
 ## 🔧 给开发者的验证方式
 
-八个 skill 均应通过 Codex `skill-creator` 的结构校验：
+九个 skill 均应通过 Codex `skill-creator` 的结构校验：
 
 ```bash
 for skill in skills/*; do

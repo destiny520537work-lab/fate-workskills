@@ -1,0 +1,4 @@
+interface:
+  display_name: "深度调研"
+  short_description: "默认深度、一手来源优先；仅在明确要求时执行轻度调研"
+  default_prompt: "Use $research to produce a sourced deep research report, or a light check only when explicitly requested."
